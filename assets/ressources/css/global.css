@@ -14,6 +14,7 @@ html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
 }
 
 article,
@@ -7358,5 +7359,11 @@ a.boutton2:hover {
   #text-ob2 ul li {
     color: #fff !important;
     text-shadow: 1px 1px 2px #000
+  }
+}
+
+@media (max-width:992px) {
+  .owl-dot{
+    display: none !important;
   }
 }

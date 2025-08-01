@@ -1,3 +1,18 @@
-body{scroll-behavior:smooth !important}
+
+html{
+  overflow-x: hidden !important;
+}
+
+body{
+  scroll-behavior: smooth !important;
+  overflow-x: hidden !important;
+}
+
+
+  @media (max-width:992px) {
+  .owl-dot{
+    display: none !important;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
