@@ -5,8 +5,8 @@
 		"style.scss"
 	],
 	"sourcesContent": [
-		"body{\r\n  scroll-behavior: smooth !important;\r\n}"
+		"html{\r\n  overflow-x: hidden !important;\r\n}\r\n\r\nbody{\r\n  scroll-behavior: smooth !important;\r\n  overflow-x: hidden !important;\r\n}\r\n\r\n.owl-dot{\r\n  display: none !important; \r\n  @media (max-width:992px) {\r\n    display: none !important;\r\n  }\r\n}\r\n\r\n.owl-theme .owl-nav.disabled+.owl-dots {\r\n  display: none !important; \r\n}"
 	],
 	"names": [],
-	"mappings": "AAAA,AAAA,IAAI,AAAA,CACF,eAAe,CAAE,iBAAiB,CACnC"
+	"mappings": "AAAA,AAAA,IAAI,AAAA,CACF,UAAU,CAAE,iBAAiB,CAC9B,AAED,AAAA,IAAI,AAAA,CACF,eAAe,CAAE,iBAAiB,CAClC,UAAU,CAAE,iBAAiB,CAC9B,AAED,AAAA,QAAQ,AAAA,CACN,OAAO,CAAE,eAAe,CAIzB,AAHC,MAAM,mBAFR,CAAA,AAAA,QAAQ,AAAA,CAGJ,OAAO,CAAE,eAAe,CAE3B,CAAA,AAED,AAAA,UAAU,CAAC,QAAQ,AAAA,SAAS,CAAC,SAAS,AAAC,CACrC,OAAO,CAAE,eAAe,CACzB"
 }

@@ -40,6 +40,12 @@ $(document).ready(function () {
 
 
 $(document).ready(function() {
+  // Prevent default for all bxslider control links
+  $(document).on('click', '.bx-wrapper a.bx-prev, .bx-wrapper a.bx-next', function(e) {
+    e.preventDefault();
+  });
+
+  // Slider 1
   $('.bxslider').bxSlider({
       minSlides: 1,
       auto: true,
@@ -51,8 +57,8 @@ $(document).ready(function() {
       controls: true,
       slideMargin: 5,
   });
-});
-$(document).ready(function() {
+
+  // Slider 2
   $('.bxslider2').bxSlider({
       minSlides: 1,
       auto: true,
