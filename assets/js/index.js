@@ -5,23 +5,18 @@ $(document).ready(function () {
     .addClass("active");
 });
 
-// window.onscroll = function () { myFunction() };
 
-// var header = document.getElementById("menu");
-// var sticky = header.offsetTop;
-// var placeholderHeight = document.getElementById("menu").clientHeight;
-// var placeholder = document.getElementById("placeHolder");
+const nav = document.querySelector("#menu");
+window.addEventListener("scroll", fixNav);
 
-// function myFunction() {
-//   if (window.pageYOffset > sticky) {
-//     header.classList.add("fixmenu");
-//     placeholder.style.height = placeholderHeight + 'px';
+function fixNav() {
+  if (window.scrollY > nav.offsetHeight + 150) {
+    nav.classList.add("navbar-active");
+  } else {
+    nav.classList.remove("navbar-active");
+  }
+}
 
-//   } else {
-//     header.classList.remove("fixmenu");
-//     placeholder.style.height = 'auto';
-//   }
-// }
 
 
 
@@ -258,6 +253,7 @@ $('.carousel4').owlCarousel({
   loop: true,
   margin: 30,
   nav: false,
+  dots: false,
   autoplay: false,
   autoplayTimeout: 7000,
   smartSpeed: 3000,
@@ -271,6 +267,31 @@ $('.carousel4').owlCarousel({
     },
     1000: {
       items: 4
+    }
+  }
+});
+
+$('.carousel5').owlCarousel({
+  loop: true,
+  margin: 30,
+  nav: false,
+  dots: false,
+  autoplay: false,
+  autoplayTimeout: 7000,
+  smartSpeed: 3000,
+  autoplayHoverPause: false,
+  mouseDrag: false,
+  freeDrag: false,
+  touchDrag: false,
+  responsive: {
+    0: {
+      items: 1
+    },
+    600: {
+      items: 2
+    },
+    1000: {
+      items: 2
     }
   }
 });

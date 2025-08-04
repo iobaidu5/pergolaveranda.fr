@@ -89,7 +89,7 @@
 </head>
 
 <body id="#">
-  <header>
+  <header id="menu">
   <div id="logo-section" class="fixmenu">
     <div class="container-fluid">
       <div class="col-md-12">
@@ -146,25 +146,27 @@
                   </li>
                 </div>
                 <div class="col-sm-5 text-left">
-                  <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
-                        class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                      <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                      <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
-                          coulissante</a></li>
-                      <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
-                          guillotine</a></li>
-                    </ul>
-                  </li>
-                  <li><a class="" href="./nos-realisations.html">Nos réalisations</a></li>
-                  <li><a class="" href="./contact.html">Devis &amp; Contact</a></li>
-                  <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                  <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
-                        class="fa-brands fa-instagram"></i></a></li>
-                  <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
-                        class="fa-brands fa-youtube"></i></a></li>
+                  <ul class="nav-list">
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <ul class="dropdown-menu">
+                        <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="./nos-realisations.html">Nos réalisations</a></li>
+                    <li><a href="./contact.html">Devis &amp; Contact</a></li>
+                    <li>
+                      <ul class="to-be-flex">
+                        <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                      </ul>
+                    </li>
+                  </ul>
                 </div>
+                
               </div>
             </ul>
           </div>
@@ -227,6 +229,12 @@
               </select>
             </div>
           </div>
+          <div class="col-sm-12 col-md-3">
+                <!-- Submit button -->
+                <button type="submit" name="devis" class="button2 btn-form" style="margin-top: 10px;">
+                  <span class="txt">Envoyer</span>
+                </button>
+          </div>
 
 
           <div class="row">
@@ -251,11 +259,7 @@
           
                 <!-- Hidden input for fallback if needed -->
                 <input style="display: none" type="submit" value="Submit" class="wpcf7-wpcf7-submit" />
-          
-                <!-- Submit button -->
-                <button type="submit" name="devis" class="button2 btn-form" style="margin-top: 10px;">
-                  <span class="txt">Envoyer</span>
-                </button>
+        
               </div>
           
               <!-- Form response -->
@@ -266,7 +270,7 @@
         </div>
       </form> <br>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 h-100">
           <div class="box2">
             <span class="icono bg-blue">
               <img src="./assets/img/icon01.png" alt="icon" class="img-responisve" style="width:100px;" loading="lazy">
@@ -279,7 +283,7 @@
             </p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 h-100">
           <div class="box2">
             <span class="icono bg-yellow">
               <img src="./assets/img/icon02.png" alt="icon" class="img-responisve" style="width:100px;" loading="lazy">
@@ -290,7 +294,7 @@
               experts se déplacera chez vous pour voir comment mener à bien votre aménagement. </p>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 h-100">
           <div class="box2">
             <span class="icono bg-rose">
               <img src="./assets/img/icon03.png" alt="icon" class="img-responisve" style="width: 100px;" loading="lazy">
@@ -309,7 +313,7 @@
     <div class="container">
       <h2 class="text-center">Nos certificats</h2>
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="box2">
             <span class="icono bg-blue">
               <img src="./assets/img/ce_lg.png" alt="icon" class="img-responisve" style="width:101px;" loading="lazy">
@@ -320,7 +324,7 @@
               03.<br>&nbsp;<br>&nbsp;</p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="box2">
             <span class="icono bg-yellow">
               <img src="./assets/img/iso.png" alt="icon" class="img-responisve" style="width:101px;" loading="lazy">
@@ -330,7 +334,7 @@
               mondiales.<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="box2">
             <span class="icono bg-rose">
               <img src="./assets/img/ift.png" alt="icon" class="img-responisve" style="width:101px;" loading="lazy">
@@ -340,7 +344,7 @@
               vent, étanchéité à l'eau, tests de résistance aux chocs. <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
           </div>
         </div>
-        <div class="col-md-3">
+        <div class="col-md-3 col-sm-6 my-2">
           <div class="box2">
             <span class="icono bg-rose">
               <img src="./assets/img/qualicoat.png" alt="icon" class="img-responisve" style="max-width: 100%;"
@@ -501,10 +505,10 @@
                 </div>
               </div>
             </div>
-            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+            <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
                   aria-label="Previous">‹</span></button><button type="button" role="presentation"
                 class="owl-next"><span aria-label="Next">›</span></button></div>
-            <div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div>
+            <div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div> -->
           </div>
         </div>
       </div>
@@ -585,12 +589,12 @@
 
                   </div>
                 </div>
-              </div>
+              </div> 
             </div>
-            <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
+            <!-- <div class="owl-nav disabled"><button type="button" role="presentation" class="owl-prev"><span
                   aria-label="Previous">‹</span></button><button type="button" role="presentation"
                 class="owl-next"><span aria-label="Next">›</span></button></div>
-            <div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div>
+            <div class="owl-dots disabled"><button role="button" class="owl-dot active"><span></span></button></div> -->
           </div>
         </div>
       </div><br><br><br><br><br><br><br><br>
