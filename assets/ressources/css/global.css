@@ -7432,7 +7432,7 @@ a.boutton2:hover {
 }
 
 .w-100px{
-  width:100% !important;
+  width: auto !important;
 }
 
 } 
