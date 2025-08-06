@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMLNV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -189,7 +219,7 @@
     <section class="one">
       <div class="container">
         <div class="row">
-          <div class="col-sm-8">
+          <div class="col-md-8">
             <h2 class="text-center">Baies Coulissantes</h2>
             <p>Les baies vitrées coulissante sont basées sur un système de profilés en aluminium extrêmement compact et
               léger. Le système est livrable avec 2, 3, 4 ou 5 ventaux. Les panneaux simples fonctionnent grâce à
@@ -200,7 +230,7 @@
             <p>La première baie vitrée peut être équipé d'une serrure à trois points et d'une poignée de marque Hoppe.
             </p>
           </div>
-          <div class="col-sm-4">
+          <div class="col-md-4">
             <img src="./assets/img/store-zip-2.png" style="display: block; margin: auto; width: 250px" alt="" loading="lazy">
           </div>
         </div><br>

@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMLNV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -190,7 +220,7 @@
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8" style="text-align: center">
+        <div class="col-md-8" style="text-align: center">
           <h2>Pergolas Bioclimatiques</h2>
           <p>Réalisé entièrement d'aluminium extrudé, la <strong>pergola bioclimatique</strong> est équipée d'un système
             de <strong>lames orientables parallèles ou bien perpendiculaires</strong>, ce qui permet d'offrir une
@@ -199,17 +229,17 @@
             Elle est également adapté au milieu professionnel (hôtellerie / restauration...)</p>
           <p>Différentes options sont disponibles sur les <strong>pergola bioclimatiques</strong> :</p>
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <ul class="list1">
                 <li>Baie vitrée fixe</li>
               </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <ul class="list1">
                 <li>Baie vitrée coulissante</li>
               </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <ul class="list1">
                 <li>Store extrudé</li>
               </ul>
@@ -220,14 +250,14 @@
           <p>Faite votre choix dans notre game de <strong>pergola bioclimatiques sur mesure</strong>, avec lames
             orientables, motorisé, et trouvez la pergola en <strong>aluminium</strong> dont vous révez.</p>
         </div>
-        <div class="col-sm-4"><video style="width: 100%" autoplay="" loop="" src="./assets/img/skycloud.mp4"></video>
+        <div class="col-md-4"><video style="width: 100%" autoplay="" loop="" src="./assets/img/skycloud.mp4"></video>
         </div>
         <script>
           document.querySelector('video').play()
         </script>
       </div>
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <div class="bx-wrapper" style="max-width: 1440px; margin: 0px auto;">
             <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 620px;">
               <div class="bxslider2"
@@ -264,7 +294,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <a href="devis" class="boutton" style="margin-right: 1%">DEVIS EN LIGNE</a>
           <a href="tel:0185538116" class="boutton">SE FAIRE RAPPELER</a>
           <br><br><a href="" class="boutton2">TÉLÉCHARGER LE CATALOGUE</a>
@@ -309,15 +339,15 @@
               </div>
           </div><br> -->
           <div class="row">
-            <div class="col-sm-4 text-center"><img src="./assets/img/france.png" style="width: 80px" alt=""
+            <div class="col-md-4 text-center"><img src="./assets/img/france.png" style="width: 80px" alt=""
                 loading="lazy">
               <h4>Fabriqué en France</h4>
             </div>
-            <div class="col-sm-4 text-center"><img src="./assets/img/garantie.png" style="width: 80px" alt=""
+            <div class="col-md-4 text-center"><img src="./assets/img/garantie.png" style="width: 80px" alt=""
                 loading="lazy">
               <h4>Garantie 10&nbsp;ans</h4>
             </div>
-            <div class="col-sm-4 text-center"><img src="./assets/img/sur-mesure.png" style="width: 80px" alt=""
+            <div class="col-md-4 text-center"><img src="./assets/img/sur-mesure.png" style="width: 80px" alt=""
                 loading="lazy">
               <h4>Sur mesure</h4>
             </div>
@@ -327,16 +357,16 @@
       <h3>FERMETURE LATÉRALE</h3>
       <hr>
       <div class="row">
-        <div class="col-sm-4">
-          <img src="./assets/img/ZIP.png" loading="lazy" alt="" class="img-responsive">
+        <div class="col-md-4">
+          <img src="./assets/img/ZIP1.png" loading="lazy" alt="" class="img-responsive">
           <h3 style="border-left: 2px solid #348ca7; padding: 10px;">Store</h3>
         </div>
-        <div class="col-sm-4">
-          <img src="./assets/img/Guillotine.png" loading="lazy" alt="" class="img-responsive">
+        <div class="col-md-4">
+          <img src="./assets/img/Guillotine2.png" loading="lazy" alt="" class="img-responsive">
           <h3 style="border-left: 2px solid #348ca7; padding: 10px;">Baie vitrée Guillotine</h3>
         </div>
-        <div class="col-sm-4">
-          <img src="./assets/img/Coulissante.png" loading="lazy" alt="" class="img-responsive">
+        <div class="col-md-4">
+          <img src="./assets/img/Coulissante3.png" loading="lazy" alt="" class="img-responsive">
           <h3 style="border-left: 2px solid #348ca7; padding: 10px;">Baie vitrée Coulissante et rabatable</h3>
         </div>
       </div>
@@ -345,11 +375,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center">
+      <div class="col-md-12 text-center">
         <h2><strong>Nos réalisations</strong></h2>
         <div class="separator"></div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <div class="carousel3 owl-carousel owl-theme owl-loaded owl-drag">
 
 
@@ -369,12 +399,12 @@
             <div class="owl-stage" style="width: 9240px; transform: translate3d(-5940px, 0px, 0px); transition: 3s;">
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/816-2.2.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/816-2.2.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/875-IMG_3398.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/875-IMG_3398.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
@@ -387,23 +417,23 @@
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/970-IMG_5795.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/970-IMG_5795.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/805-gg.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/805-gg.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/pergolanuit.jpg" class="img-responsive" alt=" pergola de nuit"
+                  <img src="./assets/img/pergola-bioclimatique/pergolanuit.jpg" class="img-responsive" alt=" pergola de nuit"
                     loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/pergolaretractable.jpg" class="img-responsive" alt=" pergola de nuit"
+                  <img src="./assets/img/pergola-bioclimatique/pergolaretractable.jpg" class="img-responsive" alt=" pergola de nuit"
                     loading="lazy">
                 </div>
               </div>
@@ -417,12 +447,12 @@
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/535-IMG_7119.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/535-IMG_7119.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/314-JUNIPER_21.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/314-JUNIPER_21.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
@@ -435,12 +465,12 @@
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/931-JUNIPER_18.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/931-JUNIPER_18.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/963-PHOTO-2021-04-16-16-08-35 2.jpg" class="img-responsive"
+                  <img src="./assets/img/pergola-bioclimatique/963-PHOTO-2021-04-16-16-08-35 2.jpg" class="img-responsive"
                     loading="lazy">
                 </div>
               </div>
@@ -454,12 +484,12 @@
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/816-2.2.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/816-2.2.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/875-IMG_3398.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/875-IMG_3398.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
@@ -472,23 +502,23 @@
               </div>
               <div class="owl-item" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/970-IMG_5795.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/970-IMG_5795.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item active" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/805-gg.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/805-gg.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item active" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/pergolanuit.jpg" class="img-responsive" alt=" pergola de nuit"
+                  <img src="./assets/img/pergola-bioclimatique/pergolanuit.jpg" class="img-responsive" alt=" pergola de nuit"
                     loading="lazy">
                 </div>
               </div>
               <div class="owl-item active" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/pergolaretractable.jpg" class="img-responsive" alt=" pergola de nuit"
+                  <img src="./assets/img/pergola-bioclimatique/pergolaretractable.jpg" class="img-responsive" alt=" pergola de nuit"
                     loading="lazy">
                 </div>
               </div>
@@ -502,12 +532,12 @@
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/535-IMG_7119.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/535-IMG_7119.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/314-JUNIPER_21.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/314-JUNIPER_21.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
@@ -520,12 +550,12 @@
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/931-JUNIPER_18.jpg" class="img-responsive" loading="lazy">
+                  <img src="./assets/img/pergola-bioclimatique/931-JUNIPER_18.jpg" class="img-responsive" loading="lazy">
                 </div>
               </div>
               <div class="owl-item cloned" style="width: 280px; margin-right: 50px;">
                 <div class="item">
-                  <img src="./assets/img/gallery/963-PHOTO-2021-04-16-16-08-35 2.jpg" class="img-responsive"
+                  <img src="./assets/img/pergola-bioclimatique/963-PHOTO-2021-04-16-16-08-35 2.jpg" class="img-responsive"
                     loading="lazy">
                 </div>
               </div>
@@ -573,17 +603,17 @@
         <div class="panel-body">
           <h3>ÉCLAIRAGE LED (en option)
             <div class="row">
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/led-integre.png" style="margin-top: 20px; width: 100%" alt=""
                   loading="lazy"><br><br>
                 <h4>Éclairage LED direct intégré dans les lames</h4>
               </div>
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/led-poutres.png" style="margin-top: 20px; width: 100%" alt=""
                   loading="lazy"><br><br>
                 <h4>Éclairage direct intégré dans les poutres périphériques LED MULTI AMBIANCE</h4>
               </div>
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/led-rgb.png" style="margin-top: 20px; width: 100%" alt="" loading="lazy"><br><br>
                 <h4>Éclairage direct intégré dans les poutres périphériques LED RGB</h4>
               </div>
@@ -591,11 +621,11 @@
           </h3>
           <h3>AUTOMATISMES (en option)
             <div class="row">
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/capteur-pluie.png" style="margin-top: 20px; width: 150px;" alt=""
                   loading="lazy"><br>
               </div>
-              <div class="col-sm-8"><br>
+              <div class="col-md-8"><br>
                 <ul class="list1">
                   <li>Capteur de pluie / de neige, permettent la fermeture automatique des&nbsp;lames orientables en
                     fonction des intempéries</li>
@@ -605,10 +635,10 @@
           </h3>
           <h3>CHAUFFAGE (en option)
             <div class="row">
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/chauffage.png" style="margin-top: 20px; width: 150px;" alt="" loading="lazy">
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <ul class="list1"><br><br><br>
                   <li>Chauffage, pour continuer à profiter de votre espace extérieur et se protéger du froid</li>
                 </ul>
@@ -623,7 +653,7 @@
     <div class="container">
       <h2 class="text-center">Tirez avantage de votre extérieur</h2>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <p>Optimisez votre espace extérieur, avec l’aménagement d’un espace de bien-être supplémentaire, où vous
             pourrez profiter de votre jardin ou de la nature tout en restant à l’abri des intempéries.</p>
           <p>Comme la véranda, la pergola a connue d’innombrables évolutions au fil des années. Allant de la pergola
@@ -645,16 +675,16 @@
             <li>Tout nos matériels sont certifiés et labellisés.</li>
           </ul>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <img src="./assets/img/slide3.jpg" style="width: 100%" alt="" loading="lazy">
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <img src="./assets/img/pergola_bioclimatique.jpg" alt="" style="width: 100%" loading="lazy"
             class="img-responsive">
         </div>
-        <div class="col-sm-6"><br>
+        <div class="col-md-6"><br>
           <h2 class="text-center">Les spécificités de la pergola bioclimatique</h2>
           <h3 class="text-center">Prenez du bon temps sous votre pergola en toute saison</h3>
           <p><strong>Ne vous laissez plus restreindre dans votre confort, les intempéries n’aurons plus raison de vous
@@ -670,7 +700,7 @@
             confort. La mise en place d’un système de chauffage, de sonorisation ou encore d’éclairage LED, sans oublié
             sa capacité de gestion climatique automatique performante et optimale.</p>
         </div>
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <h2 class="text-center">Les différents styles de pergola</h2>
           <h3 class="text-center">Une large palette de couleurs</h3>
           <p class="text-center"><strong>Pergola 78</strong> vous offres la possibilité de personnaliser votre pergola,
@@ -750,12 +780,12 @@
   <section class="one bgvideo">
     <div class="container">
       <div class="row flex-middle">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2>La supervision, conseil et accompagnement de votre projet&nbsp;!</h2>
           <p><strong>Doz Construction </strong>vous accompagne et vous conseil durant l’exécution de votre projet. Nos
             experts vous donneront la solution la plus optimale pour l’aménagement de votre pergola véranda. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="contact-box">
             <a href="./contact.html">
               <h2><b>Contact <i class="fa fa-arrow-right"></i></b></h2>

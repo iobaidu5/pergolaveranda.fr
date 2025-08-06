@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMLNV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -188,31 +218,31 @@
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <h2><strong>Contactez nous !</strong></h2>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2 class="text-center">Lequel de nos produits vous intéresse ?</h2>
           <div class="row">
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="product-select">
                 <img src="./assets/img/icon1.png" alt="" class="img-responsive" loading="lazy">
                 <h3 class="product-title">Véranda</h3>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="product-select">
                 <img src="./assets/img/icon1.png" alt="" class="img-responsive" loading="lazy">
                 <h3 class="product-title">Véranda évolutive</h3>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="product-select">
                 <img src="./assets/img/icon2.png" alt="" class="img-responsive" loading="lazy">
                 <h3 class="product-title">Pergola Bioclimatique</h3>
               </div>
             </div>
-            <div class="col-sm-6">
+            <div class="col-md-6">
               <div class="product-select">
                 <img src="./assets/img/icon2.png" alt="" class="img-responsive" loading="lazy">
                 <h3 class="product-title">Pergola Rétractable</h3>
@@ -232,43 +262,43 @@
             <input type="hidden" name="produit" id="produit"
               value="produit">
             <div class="row form-contact" id="form" style="display: none">
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <div class="form-group has-feedback ">
                   <input type="text" class="form-control " id="lastname" name="lastname" value="" placeholder="Nom">
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <div class="form-group has-feedback ">
                   <input type="text" class="form-control " id="firstname" name="firstname" value=""
                     placeholder="Prénom">
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <div class="form-group has-feedback ">
                   <!-- <label for="form_phone">Téléphone</label> -->
                   <input type="text" name="phone" id="form_phone" value="" class="form-control" placeholder="Téléphone">
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <div class="form-group has-feedback ">
                   <!-- <label for="form_email">E-mail</label> -->
                   <input type="text" name="email" id="form_email" value="" class="form-control" placeholder="Email">
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <div class="form-group  ">
                   <!-- <label for="form_zipcode">Code postal</label> -->
                   <input type="text" name="zipcode" id="form_zipcode" value="" class="form-control"
                     placeholder="Code postal">
                 </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <div class="form-group  ">
                   <!-- <label for="form_city">Ville</label> -->
                   <input type="text" name="city" id="form_city" value="" class="form-control" placeholder="Ville">
                 </div>
               </div>
-              <div class="col-sm-12">
+              <div class="col-md-12">
                 <div class="form-group has-feedback ">
                   <select name="subject" class="form-control" id="subject">
                     <option>Surface approximative :</option>
@@ -278,14 +308,14 @@
                   </select>
                 </div>
               </div>
-              <div class="col-sm-12">
+              <div class="col-md-12">
                 <div class="form-group has-feedback ">
                   <!-- <label for="form_message">Message</label> -->
                   <textarea name="message" id="form_message" class="form-control" rows="6"
                     placeholder="Message"></textarea>
                 </div>
               </div>
-              <div class="col-sm-12">
+              <div class="col-md-12">
 
                 <div class="checkbox">
                   <label for="newsletter">M'inscrire à la newsletter</label>
@@ -337,7 +367,7 @@
             </div>
           </form>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="contact-info">
             <span class="icon-1">
               <i class="fa fa-map-marker" aria-hidden="true"></i>

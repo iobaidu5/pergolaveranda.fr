@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMLNV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -190,7 +220,7 @@
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2 class="text-center">La pergola, un coin ornemental de fraîcheur et d’ombre en extérieur</h2>
           <p>Combinant les atouts d’une véranda et d’un store banne, <strong>la pergola permet de profiter de sa
               terrasse ou de son jardin dans son intégralité. </strong>Très tendance dans le <strong>91</strong>, la
@@ -202,7 +232,7 @@
             différents matériaux selon les besoins et les goûts, une pergola est un investissement plaisant et très
             confortable dont on peut profiter durablement si sa construction est confiée à un professionnel. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <form class="form contact_content-form" id="contactForm" method="post"
 action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
 <input type="hidden" name="lang" value="fr" />
@@ -276,9 +306,9 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
         </div>
       </div><br>
       <div class="row">
-        <div class="col-sm-6"><img src="./assets/img/1.0.jpg" style="width: 100%; height: 450px; object-fit: cover"
+        <div class="col-md-6"><img src="./assets/img/1.0.jpg" style="width: 100%; height: 450px; object-fit: cover"
             alt="" loading="lazy"></div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2 class="text-center">Concevoir et construire sa pergola chez un professionnel comme Doz Construction dans
             le 91 </h2>
           <p>Plusieurs modèles de pergola sont disponibles sur le marché, mais pour garantir le rendu final de votre
@@ -299,11 +329,11 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center">
+      <div class="col-md-12 text-center">
         <h2><strong>Nos réalisations</strong></h2>
         <div class="separator"></div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <div class="carousel3 owl-carousel owl-theme owl-loaded owl-drag">
 
 
@@ -503,7 +533,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2 class="text-center">Assurez votre projet pergola dans le 91 avec Doz Construction</h2>
           <p>Comme un projet pergola représente un investissement conséquent, il est judicieux de remettre son projet
             entre les mains d’un professionnel de la construction de pergola et de véranda comme Doz Construction dans
@@ -515,7 +545,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
             traiterons chaque projet de façon personnalisé avec un devis gratuit et <strong>des conseils avisés pour
               cerner au mieux les éléments qui devront constituer votre projet de pergola dans le 91.</strong></p>
         </div>
-        <div class="col-sm-6"><img src="./assets/img/1.4.jpg" style="width: 100%; height: 400px; object-fit:cover"
+        <div class="col-md-6"><img src="./assets/img/1.4.jpg" style="width: 100%; height: 400px; object-fit:cover"
             loading="lazy" alt=""></div>
       </div><br>
       <h2 class="text-center">Des pergolas et des vérandas modernes et évolutives</h2>
@@ -532,9 +562,9 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
       <p>Vous pourrez ainsi profiter de votre nouveau coin confortable et esthétique quand vous le souhaitez dès que
         le projet sera terminé.</p>
       <div class="row">
-        <div class="col-sm-6"><img src="./assets/img/1.22.jpg" style="width: 100%; height: 630px; object-fit:cover"
+        <div class="col-md-6"><img src="./assets/img/1.22.jpg" style="width: 100%; height: 630px; object-fit:cover"
             loading="lazy" alt=""></div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2 class="text-center">Des pros de la pergola rétractable et de la pergola bioclimatique </h2>
           <p>Pour ses dernières innovations technologiques, la <strong>pergola bioclimatique</strong> est sans aucun
             doute le modèle de pergola le plus sophistiqué et le plus moderne parmi ces structures offrant une
@@ -556,7 +586,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
       </div><br>
       <h2 class="text-center">Un expert fiable en aménagement de pergolas et de vérandas du 91 </h2>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <p>Constituant un investissement rentable si vous prévoyez de vendre votre maison plus tard, la construction
             d’une pergola apporte de la valeur à une habitation, en plus d’optimiser son confort.</p>
           <p>Ainsi, faire appel à un expert de la conception de véranda et de pergola comme Doz Construction dans le
@@ -576,7 +606,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
               dans le 91 </li>
           </ul>
         </div>
-        <div class="col-sm-6"><img src="./assets/img/3.11.jpg" alt="" class="img-responsive" loading="lazy"></div>
+        <div class="col-md-6"><img src="./assets/img/3.11.jpg" alt="" class="img-responsive" loading="lazy"></div>
       </div>
       <p>Nous restons à votre disposition pour toutes les questions d'ordre technique, esthétique et pratique. Nous
         sommes joignables au <a href="tel:0185538116">01 85 53 81 16</a> ou sur notre site en ligne pour mieux cerner
@@ -589,12 +619,12 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
   <section class="one bgvideo">
     <div class="container">
       <div class="row flex-middle">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2>La supervision, conseil et accompagnement de votre projet&nbsp;!</h2>
           <p><strong>Doz Construction </strong>vous accompagne et vous conseil durant l’exécution de votre projet. Nos
             experts vous donneront la solution la plus optimale pour l’aménagement de votre pergola véranda. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="contact-box">
             <a href="./contact.html">
               <h2><b>Contact <i class="fa fa-arrow-right"></i></b></h2>

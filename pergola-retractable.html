@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMLNV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -190,7 +220,7 @@
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8" style="text-align: center">
+        <div class="col-md-8" style="text-align: center">
           <h2>Pergolas rétractables</h2>
           <p>Bien plus robuste qu'un store de terrasse, la <strong>pergola à toile rétractable</strong> vous protège des
             intempéries et du vent jusqu'à 195km/h !</p>
@@ -201,31 +231,31 @@
           <p>La transformation en véranda est également possible avec certaines options de confort, idéale pour profiter
             de sa pergola en été comme en hiver.</p>
           <div class="row">
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <ul class="list1">
                 <li>Baie vitrée fixe</li>
               </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <ul class="list1">
                 <li>Baie vitrée coulissante</li>
               </ul>
             </div>
-            <div class="col-sm-4">
+            <div class="col-md-4">
               <ul class="list1">
                 <li>Store extrudé</li>
               </ul>
             </div>
           </div>
         </div>
-        <div class="col-sm-4"><video style="width: 100%" autoplay="" loop=""
+        <div class="col-md-4"><video style="width: 100%" autoplay="" loop=""
             src="./assets/img/ANIMATION.mp4"></video></div>
         <script>
           document.querySelector('video').play()
         </script>
       </div>
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <div class="bx-wrapper" style="max-width: 1440px; margin: 0px auto;">
             <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 620px;">
               <div class="bxslider2"
@@ -262,7 +292,7 @@
             </div>
           </div>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <a href="devis" class="boutton" style="margin-right: 1%">DEVIS EN LIGNE</a>
           <a href="tel:0185538116" class="boutton">SE FAIRE RAPPELER</a>
           <br><br><a href="" class="boutton2">TÉLÉCHARGER LE CATALOGUE</a>
@@ -307,13 +337,13 @@
                   </div>
               </div><br> -->
           <div class="row">
-            <div class="col-sm-4 text-center"><img src="./assets/img/france.png" style="width: 80px" alt="">
+            <div class="col-md-4 text-center"><img src="./assets/img/france.png" style="width: 80px" alt="">
               <h4>Fabriqué en France</h4>
             </div>
-            <div class="col-sm-4 text-center"><img src="./assets/img/garantie.png" style="width: 80px" alt="">
+            <div class="col-md-4 text-center"><img src="./assets/img/garantie.png" style="width: 80px" alt="">
               <h4>Garantie 10&nbsp;ans</h4>
             </div>
-            <div class="col-sm-4 text-center"><img src="./assets/img/sur-mesure.png" style="width: 80px" alt="">
+            <div class="col-md-4 text-center"><img src="./assets/img/sur-mesure.png" style="width: 80px" alt="">
               <h4>Sur mesure</h4>
             </div>
           </div>
@@ -322,15 +352,15 @@
       <h3>FERMETURE LATÉRALE</h3>
       <hr>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <img src="./assets/img/ZIP.png" alt="" class="img-responsive">
           <h3 style="border-left: 2px solid #348ca7; padding: 10px;">Store</h3>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <img src="./assets/img/Guillotine.png" alt="" class="img-responsive">
           <h3 style="border-left: 2px solid #348ca7; padding: 10px;">Baie vitrée Guillotine</h3>
         </div>
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <img src="./assets/img/Coulissante.png" alt="" class="img-responsive">
           <h3 style="border-left: 2px solid #348ca7; padding: 10px;">Baie vitrée Coulissante et rabatable</h3>
         </div>
@@ -361,11 +391,11 @@
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center">
+      <div class="col-md-12 text-center">
         <h2><strong>Nos réalisations</strong></h2>
         <div class="separator"></div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <div class="carousel3 owl-carousel owl-theme owl-loaded owl-drag">
 
 
@@ -571,10 +601,10 @@
         <div class="panel-body">
           <h3>AUTOMATISMES (en option)
             <div class="row">
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/capteur-pluie.png" style="margin-top: 20px; width: 150px;" alt=""><br>
               </div>
-              <div class="col-sm-8"><br>
+              <div class="col-md-8"><br>
                 <ul class="list1">
                   <li>Capteur de pluie / de neige, permettent la fermeture automatique des&nbsp;lames orientables en
                     fonction des intempéries</li>
@@ -584,10 +614,10 @@
           </h3>
           <h3>CHAUFFAGE (en option)
             <div class="row">
-              <div class="col-sm-4 text-center">
+              <div class="col-md-4 text-center">
                 <img src="./assets/img/chauffage.png" style="margin-top: 20px; width: 150px;" alt="">
               </div>
-              <div class="col-sm-6">
+              <div class="col-md-6">
                 <ul class="list1"><br><br><br>
                   <li>Chauffage, pour continuer à profiter de votre espace extérieur et se protéger du froid</li>
                 </ul>
@@ -604,7 +634,7 @@
         journées les plus chaudes et des plus pluvieuses sans vous cacher la vue. <strong>Dans le 78, nous avons la
           solution pour vous ! Des pergolas pour tous les goûts et pour tous types d’habitations.</strong></p>
       <div class="row">
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <h2>Qu’est-ce qu’une pergola&nbsp;?</h2>
           <p><strong>La pergola est un petit aménagement de jardin, </strong>utilisé principalement pour permettre aux
             plantes de grimper dessus mais sert également d’aménagement extérieur pour les habitants de la maison car
@@ -626,7 +656,7 @@
             conception d’extérieur moderne et design. Donnez un meilleur coup d’œil à votre maison, choisissez une
             pergola&nbsp;!</p>
         </div>
-        <div class="col-sm-4"><br><br>
+        <div class="col-md-4"><br><br>
           <div class="box-img1">
             <img src="./assets/img/image2.jpeg" alt="">
           </div>
@@ -639,8 +669,8 @@
         L'évacuation de l'eau de pluie est effectuée par le biais des gouttières et une descente intégrée aux piliers.
       </p>
       <div class="row">
-        <div class="col-sm-6"><br><img src="./assets/img/222.jpg" alt="" class="img-responsive"></div>
-        <div class="col-sm-6">
+        <div class="col-md-6"><br><img src="./assets/img/222.jpg" alt="" class="img-responsive"></div>
+        <div class="col-md-6">
           <h2>Quelles sont ces caractéristiques&nbsp;?</h2>
           <p><strong>La structure de la pergola rétractable peut être faite de bois pour offrir un aspect naturel, ou
               d’aluminium pour offrir un style contemporain à votre extérieur. </strong>Il est également équipé d'une
@@ -663,11 +693,11 @@
   <section class="one bg-gray">
     <div class="container">
       <div class="row">
-        <div class="col-sm-12 text-center">
+        <div class="col-md-12 text-center">
           <h2><strong>Nos réalisations</strong></h2>
           <div class="separator"></div>
         </div>
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <div class="carousel3 owl-carousel owl-theme owl-loaded owl-drag">
 
 
@@ -869,7 +899,7 @@
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2>Quels sont les avantages d’un ce type d’aménagement&nbsp;?</h2>
           <h3>Protège contre le soleil lorsque vous souhaitez passer la journée en extérieur</h3>
           <p>C’est le principal avantage de ce type de pergola à toit flexible. Il vous permet utiliser votre terrasse
@@ -878,10 +908,10 @@
             profiter pleinement de votre extérieur. On note également que les modèles rétractables ont des toits
             parfaitement imperméables. Cela les rend très pratiques pendant les saisons pluvieuses.</p>
         </div>
-        <div class="col-sm-6"><br><img src="./assets/img/2222.jpg" alt="" class="img-responsive"></div>
+        <div class="col-md-6"><br><img src="./assets/img/2222.jpg" alt="" class="img-responsive"></div>
       </div><br>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h3>Apporte une touche de modernité et design à votre extérieur</h3>
           <p><strong>Le toit complètement d’une pergola rétractable apporte un ajout très esthétique pour un espace de
               vie plus moderne. </strong>Sa forme minimaliste en fait un excellent atout pour tout le design extérieur.
@@ -889,7 +919,7 @@
             Des couleurs sobres vous permettant d’aménager encore mieux votre espace, car elles s’adaptent plus
             facilement à tout type de la décoration. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h3>Solution tendance adaptée à vos besoins</h3>
           <p>Les pergolas rétractables de qualité sont conçues pour résister aux intempéries (pluies, vents …). Elles
             ont une durée de vie considérable ce qui vous permet d'économiser au long terme. Afin de nous protéger
@@ -908,12 +938,12 @@
   <section class="one bgvideo">
     <div class="container">
       <div class="row flex-middle">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2>La supervision, conseil et accompagnement de votre projet&nbsp;!</h2>
           <p><strong>Doz Construction </strong>vous accompagne et vous conseil durant l’exécution de votre projet. Nos
             experts vous donneront la solution la plus optimale pour l’aménagement de votre pergola véranda. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="contact-box">
             <a href="./contact.html">
               <h2><b>Contact <i class="fa fa-arrow-right"></i></b></h2>

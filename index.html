@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <div class="bandeau wow fadeIn" data-wow-duration="1s" data-wow-delay="0"
@@ -229,7 +259,7 @@
               </select>
             </div>
           </div>
-          <div class="col-sm-12 col-md-3">
+          <div class="col-md-12 col-lg-3">
                 <!-- Submit button -->
                 <button type="submit" name="devis" class="button2 btn-form" style="margin-top: 10px;">
                   <span class="txt">Envoyer</span>
@@ -238,7 +268,7 @@
 
 
           <div class="row">
-            <div class="col-xs-12">
+            <div class="col-md-12">
               <!-- Checkbox section -->
               <div class="row">
                 <div class="checkbox d-flex align-items-start" style="text-align: left;">
@@ -313,7 +343,7 @@
     <div class="container">
       <h2 class="text-center">Nos certificats</h2>
       <div class="row">
-        <div class="col-md-3 col-sm-6 my-2">
+        <div class="col-md-3 col-md-6 my-2">
           <div class="box2">
             <span class="icono bg-blue">
               <img src="./assets/img/ce_lg.png" alt="icon" class="img-responisve" style="width:101px;" loading="lazy">
@@ -324,7 +354,7 @@
               03.<br>&nbsp;<br>&nbsp;</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 my-2">
+        <div class="col-md-3 col-md-6 my-2">
           <div class="box2">
             <span class="icono bg-yellow">
               <img src="./assets/img/iso.png" alt="icon" class="img-responisve" style="width:101px;" loading="lazy">
@@ -334,7 +364,7 @@
               mondiales.<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 my-2">
+        <div class="col-md-3 col-md-6 my-2">
           <div class="box2">
             <span class="icono bg-rose">
               <img src="./assets/img/ift.png" alt="icon" class="img-responisve" style="width:101px;" loading="lazy">
@@ -344,7 +374,7 @@
               vent, étanchéité à l'eau, tests de résistance aux chocs. <br>&nbsp;<br>&nbsp;<br>&nbsp;<br>&nbsp;</p>
           </div>
         </div>
-        <div class="col-md-3 col-sm-6 my-2">
+        <div class="col-md-3 col-md-6 my-2">
           <div class="box2">
             <span class="icono bg-rose">
               <img src="./assets/img/qualicoat.png" alt="icon" class="img-responisve" style="max-width: 100%;"
@@ -363,7 +393,7 @@
   <section class="one wow fadeIn bgBlue" style="visibility: visible; animation-name: fadeIn;">
     <div class="container">
       <div class="row" style="overflow: hidden; height: fit-content">
-        <div class="col-sm-12">
+        <div class="col-md-12">
           <div class="carousel4 owl-carousel owl-theme owl-loaded owl-drag">
 
 
@@ -514,10 +544,10 @@
       </div>
       <br>
       <div class="row">
-        <div class="col-sm-4">
+        <div class="col-md-4">
           <h2>Nos <strong>prestations</strong></h2>
         </div>
-        <div class="col-sm-8">
+        <div class="col-md-8">
           <div class="carousel2 owl-carousel owl-theme owl-loaded">
 
 
@@ -614,8 +644,8 @@
           <p>DOZ dispose de son propre bureau d'étude interne permettant<br> de concevoir et de réaliser toutes les
             demandes même les projets<br> les plus spécifiques.</p><br>
           <h3>Plan 3D</h3><br>
-          <div style="display: flex; flex-direction: row; justify-content: space-around;" class="w-80">
-            <img src="./assets/img/plan.png" class="w-100px"  alt="" loading="lazy">
+          <div style="display: flex; flex-direction: row; justify-content: space-around; width: 80%">
+            <img src="./assets/img/plan-icon.png" class="w-100px" alt="" loading="lazy">
             <img src="./assets/img/xyz.png" class="w-100px" alt="" loading="lazy">
           </div><br>
           <p>Permettent de visualiser chaque détail de votre futur extérieur</p><br>
@@ -629,12 +659,12 @@
   <section class="one bgvideo">
     <div class="container">
       <div class="row flex-middle">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2>La supervision, conseil et accompagnement de votre projet&nbsp;!</h2>
           <p><strong>Doz Construction </strong>vous accompagne et vous conseil durant l’exécution de votre projet. Nos
             experts vous donneront la solution la plus optimale pour l’aménagement de votre pergola véranda. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="contact-box">
             <a href="./contact.html">
               <h2><b>Contact <i class="fa fa-arrow-right"></i></b></h2>
@@ -649,7 +679,7 @@
       <h2 class="text-center">L’innovation en pergola véranda</h2>
       <h3 class="text-center">Un design alliant modernité et élégance</h3><br>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <br>
           <p>Une ouverture sur la nature. </p>
           <p><strong>Avec les pergolas vérandas, profitez d’un moment de bien-être et de sérénité, tout en bénéficiant
@@ -660,7 +690,7 @@
             pergola véranda. </p>
           <p>Un endroit qui fait bon de vivre.</p>
         </div>
-        <div class="col-sm-6"><br><img src="./assets/img/2.5.jpg" alt="" class="img-responsive paralax" loading="lazy"
+        <div class="col-md-6"><br><img src="./assets/img/2.5.jpg" alt="" class="img-responsive paralax" loading="lazy"
             style="transform: translateX(109.495px);"></div>
       </div><br>
       <h3 class="text-center">Des matériaux haut de gamme</h3>
@@ -708,9 +738,9 @@
         options de vitrages de qualités. Si l’isolation, la sécurité, et le design sont vos critères de prédilections,
         pergola véranda vous offres toutes ces possibilités.</p>
       <div class="row">
-        <div class="col-sm-6"><br><br><img src="./assets/img/pj23.jpg" alt="" class="img-responsive paralax" loading="lazy"
+        <div class="col-md-6"><br><br><img src="./assets/img/pj23.jpg" alt="" class="img-responsive paralax" loading="lazy"
             style="transform: translateX(-121.242px);"></div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h4>Des vitrages à isolation phonique bien affirmé</h4>
           <ul class="list1">
             <li>4ITR/18/6 CLAIR -&nbsp;Rw 32</li>
@@ -765,11 +795,11 @@
 <section class="one">
   <div class="container">
   <div class="row">
-      <div class="col-sm-12 text-center">
+      <div class="col-md-12 text-center">
           <h2><strong>Nos réalisations</strong></h2>
           <div class="separator"></div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-md-12">
           <div class="carousel3 owl-carousel owl-theme">
               <div class="item bg1">
                   <div class="inner">
@@ -834,7 +864,7 @@
   <section class="one newsletter">
     <div class="container">
       <div class="row">
-        <div class="col-sm-8 col-sm-push-2">
+        <div class="col-md-8 col-md-push-2">
           <h2><strong>S'inscrire à notre newsletter</strong></h2>
           <div class="row">
             <form role="form" method="post" action="#form-newsletter">
@@ -854,8 +884,7 @@
                             traitement a pour finalité de traiter votre demande spécifique.<br> Les données collectées
                             sont conservées pour la durée de nos relations commerciales + 1 an. Conformément à la loi
                             « informatique et libertés », vous pouvez exercer votre droit d’accès aux données vous
-                            concernant et les faire rectifier auprès de notre référent à <a href="mailto:"
-                              conseil@dozset.fr"="">conseil@dozset.fr</a>.<br> Vous disposez également d’un droit de
+                            concernant et les faire rectifier auprès de notre référent à <a href="mailto:conseil@dozset.fr">conseil@dozset.fr</a>.<br> Vous disposez également d’un droit de
                             rectification, à l’oubli, à la portabilité, de limitation ou d’opposition auprès de notre
                             référent à <a href="mailto:conseil@dozset.fr">conseil@dozset.fr</a>.<br><br> En dernier
                             recours, vous pouvez déposer une réclamation auprès de la CNIL. </div>
@@ -884,6 +913,39 @@
     </div>
   </section>
 </div>
+
+
+
+<script>
+  var conf_name = "DOZ CONSTRUCTION";
+var conf_email = "conseil@dozset.fr";
+var modal_rgpd = '<div class="modal fade" id="modal-rgpd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
+  '        <div class="modal-dialog" role="document">' +
+  '            <div class="modal-content">' +
+  '                <div class="modal-body">' +
+  '                  * En cochant cette case, j’accepte que mes données personnelles soient collectées et traitées par le service commercial de ' + conf_name + '.' +
+  '                   Leur traitement a pour finalité de traiter votre demande spécifique.<br>' +
+  '                   Les données collectées sont conservées pour la durée de nos relations commerciales + 1 an. Conformément à la loi' +
+  '                   « informatique et libertés », vous pouvez exercer votre droit d’accès aux données vous concernant et les faire rectifier' +
+  '                   auprès de notre référent à <a href="mailto:"' + conf_email + '">' + conf_email + '</a>.<br>' +
+  '                   Vous disposez également d’un droit de rectification, à l’oubli, à la portabilité, de limitation ou d’opposition auprès de notre référent à ' +
+  '                   <a href="mailto:' + conf_email + '">' + conf_email + '</a>.<br><br>' +
+  '                   En dernier recours, vous pouvez déposer une réclamation auprès de la CNIL.' +
+  '                </div>' +
+  '                <div class="modal-footer">' +
+  '                    <div class="form-group text-center">' +
+  '                        <button type="button" class="btn btn-default btn-primary" data-dismiss="modal">Fermer</button>' +
+  '                    </div>' +
+  '                </div>' +
+  '            </div>' +
+  '        </div>' +
+  '    </div>';
+$(document).ready(function () {
+  $(".info-rgpd label").after(function () {
+    return '&nbsp;<a href="#" data-toggle="modal" data-target="#modal-rgpd"><i class="fa fa-info-circle"></i></a>' + modal_rgpd;
+  });
+});;
+</script>
   </div>
 
   <div class="phone-fix show">

@@ -97,7 +97,7 @@
           <div class="navbar-header">
             <div class="flex">
               <div class="logo-2">
-                <a href="./index.html"><img src="./assets//img/logo2.png" alt="" class="img-responsive"
+                <a href="./index.html"><img src="./assets/img/logo2.png" alt="" class="img-responsive"
                     loading="lazy"></a>
               </div>
               <div class="flex20">
@@ -148,25 +148,30 @@
                 <div class="col-sm-5 text-left">
                   <ul class="nav-list">
                     <li class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span class="caret"></span></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fermeture latérale<span
+                          class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a class="" style="padding-top: 10px !important" href="./store-zip.html">Store Zip</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée coulissante</a></li>
-                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée guillotine</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-coulissante.html">Baie vitrée
+                            coulissante</a></li>
+                        <li><a class="" style="padding-top: 10px !important" href="./baie-vitree-guillotine.html">Baie vitrée
+                            guillotine</a></li>
                       </ul>
                     </li>
                     <li><a href="./nos-realisations.html">Nos réalisations</a></li>
                     <li><a href="./contact.html">Devis &amp; Contact</a></li>
-                    <li>
+                    <li class="">
                       <ul class="to-be-flex">
                         <li><a href="tel:0185538116"><i class="fa-solid fa-phone"></i></a></li>
-                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                        <li><a href="https://www.instagram.com/doz.set/" target="_blank"><i
+                              class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.youtube.com/@dozsetPergolaVeranda" target="_blank"><i
+                              class="fa-brands fa-youtube"></i></a></li>
                       </ul>
                     </li>
                   </ul>
                 </div>
-                
+
               </div>
             </ul>
           </div>
@@ -175,6 +180,31 @@
     </div>
   </div>
 </header>
+
+
+<script>
+  $(document).ready(function () {
+    $('.dropdown-toggle').on('click', function (e) {
+      var $parent = $(this).parent('.dropdown');
+
+      // Prevent default Bootstrap behavior
+      e.preventDefault();
+      e.stopPropagation();
+
+      // Close other open dropdowns
+      $('.dropdown').not($parent).removeClass('open');
+
+      // Toggle current one
+      $parent.toggleClass('open');
+    });
+
+    // Optional: close dropdowns when clicking outside
+    $(document).on('click', function () {
+      $('.dropdown').removeClass('open');
+    });
+  });
+</script>
+
 
   
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2NMLNV" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -190,7 +220,7 @@
   <section class="one">
     <div class="container">
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <p>Populaires dans le 91, les vérandas sont devenues des installations très demandées. Les propriétaires les
             apprécient surtout pour leur côté pratique, esthétique et confortable.</p>
           <p><strong>Un projet véranda est généralement lancé pour agrandir une habitation en rajoutant une pièce en
@@ -202,7 +232,7 @@
             (terrasse, jardin), il est aussi pratique en hiver pour rester à l’abri du froid et continuer à profiter du
             paysage externe.</p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <form class="form contact_content-form" id="contactForm" method="post"
 action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
 <input type="hidden" name="lang" value="fr" />
@@ -276,9 +306,9 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
         </div>
       </div><br>
       <div class="row">
-        <div class="col-sm-6"><br><img src="./assets/img/veranda/1.jpg" style="width: 100%; height: 400px; object-fit: cover"
+        <div class="col-md-6"><br><img src="./assets/img/veranda/1.jpg" style="width: 100%; height: 400px; object-fit: cover"
             alt="" loading="lazy"></div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2 class="text-center">Doz Construction, un spécialiste de l’aménagement extérieur</h2>
           <p>Naturellement, vous obtiendrez un meilleur rendu en faisant appel à un professionnel en conception et en
             construction de véranda tel que Doz Construction.</p>
@@ -296,11 +326,11 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
 
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 text-center">
+      <div class="col-md-12 text-center">
         <h2><strong>Nos réalisations</strong></h2>
         <div class="separator"></div>
       </div>
-      <div class="col-sm-12">
+      <div class="col-md-12">
         <div class="carousel3 owl-carousel owl-theme owl-loaded owl-drag">
 
 
@@ -501,7 +531,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
     <div class="container">
       <h2 class="text-center">Des créations de vérandas professionnelles, résistantes et durables</h2>
       <div class="row">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <p>Afin de garantir des constructions aux normes mondiales, notre entreprise s’est munie des certifications
             essentielles à une entreprise de cette envergure : Certificat CE, Certificat ISO, Certificat IFT et
             Certificat QUALICOAT ainsi que des meilleurs éléments pour prendre en main votre projet véranda dans le 91.
@@ -518,7 +548,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
           <p>À l’issue de cette expertise, nous vous présenterons un devis adapté à <strong>votre projet de véranda dans
               le 91, sans frais,</strong> vous aurez une estimation des coûts des travaux de votre future véranda.</p>
         </div>
-        <div class="col-sm-6"><img src="./assets/img/veranda/3.jpg" style="width: 100%; height: 450px; object-fit:cover" alt=""
+        <div class="col-md-6"><img src="./assets/img/veranda/3.jpg" style="width: 100%; height: 450px; object-fit:cover" alt=""
             loading="lazy" div="">
         </div><br>
         <h2 class="text-center">Des vérandas stylées et modernes en aluminium</h2>
@@ -540,9 +570,9 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
         <p>Comme le résultat final est important, nous avons mis à votre disposition plusieurs réalisations sur notre
           plateforme en ligne qui refléteront parfaitement les modèles que notre équipe a déjà réalisés.</p>
         <div class="row">
-          <div class="col-sm-6"><img src="./assets/img/veranda/2.jpg" style="width: 100%; height: 500px; object-fit:cover"
+          <div class="col-md-6"><img src="./assets/img/veranda/2.jpg" style="width: 100%; height: 500px; object-fit:cover"
               loading="lazy" alt=""></div>
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <h2 class="text-center">Votre pergola bioclimatique ou rétractable en Essonne</h2>
             <p>La pergola bioclimatique est sans aucun doute l’extension en outdoor la plus populaire du moment en
               Essonne, mais aussi dans le reste du pays. Elle est réputée pour sa toiture qui permet de gérer les
@@ -566,7 +596,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
           conditions. Notez que la toiture ouvrante est un des musts à faire installer pour relooker votre véranda
           d’origine.</p>
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-md-6">
             <h2 class="text-center">Des services sur mesure et fiables</h2>
             <p>Pour des travaux de qualité et un rendu plus que satisfaisant, nous avons adaptée toutes nos prestations
               en fonction de vos besoins liés à votre projet de véranda. En plus de nos certifications professionnelles
@@ -587,7 +617,7 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
               <li><strong>des vérandas et des pergolas réalisées sur mesure</strong></li>
             </ul>
           </div>
-          <div class="col-sm-6"><img src="./assets/img/veranda/33.jpg"
+          <div class="col-md-6"><img src="./assets/img/veranda/33.jpg"
               style="height: 570px; width: 100%; object-fit: cover" alt="" class="img-responsive" loading="lazy"></div>
         </div><br>
         <h2 class="text-center">Doz Construction et ses pergolas sur mesure</h2>
@@ -607,12 +637,12 @@ action="https://jgviaboye9.execute-api.eu-west-3.amazonaws.com/prod/notify">
   <section class="one bgvideo">
     <div class="container">
       <div class="row flex-middle">
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <h2>La supervision, conseil et accompagnement de votre projet&nbsp;!</h2>
           <p><strong>Doz Construction </strong>vous accompagne et vous conseil durant l’exécution de votre projet. Nos
             experts vous donneront la solution la plus optimale pour l’aménagement de votre pergola véranda. </p>
         </div>
-        <div class="col-sm-6">
+        <div class="col-md-6">
           <div class="contact-box">
             <a href="./contact.html">
               <h2><b>Contact <i class="fa fa-arrow-right"></i></b></h2>

@@ -203,7 +203,7 @@ $('.carousel2').owlCarousel({
   loop: true,
   margin: 30,
   nav: false,
-  dots: true,
+  dots: false,
   autoplay: false,
   autoplayTimeout: 7000,
   smartSpeed: 3000,
